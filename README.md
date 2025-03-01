@@ -46,11 +46,13 @@ Step 2: Install all node modules in the javascrip folder
 	npm install 
 
 Step 3: Create channel in fabric
-            cd fabric-samples/test-network
-             sudo ./network.sh down
-             sudo ./network.sh up createChannel -c fabric-car -ca
+
+    cd fabric-samples/test-network
+    sudo ./network.sh down
+    sudo ./network.sh up createChannel -c fabric-car -ca
 
 Step 4: Deploy chaincode
+
     sudo ./network.sh deployCC -c carChannel -ccn carchaincode -ccp ../Fabric-Car/chaincode/ -ccl javascript
 
 Step 4: Use application in the javascript folder to interact with the network
